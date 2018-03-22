@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class RedmineOperations - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link">Object
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-create_group">#create_group</a>
+    
+    <li ><a href="#method-i-create_user">#create_user</a>
+    
+    <li ><a href="#method-i-delete_data">#delete_data</a>
+    
+    <li ><a href="#method-i-delete_group_by_name">#delete_group_by_name</a>
+    
+    <li ><a href="#method-i-delete_user_by_id">#delete_user_by_id</a>
+    
+    <li ><a href="#method-i-delete_user_by_login">#delete_user_by_login</a>
+    
+    <li ><a href="#method-i-delete_user_by_mail">#delete_user_by_mail</a>
+    
+    <li ><a href="#method-i-get_data">#get_data</a>
+    
+    <li ><a href="#method-i-get_group_by_id">#get_group_by_id</a>
+    
+    <li ><a href="#method-i-get_group_id_by_group_name">#get_group_id_by_group_name</a>
+    
+    <li ><a href="#method-i-get_group_user_ids_by_group_id">#get_group_user_ids_by_group_id</a>
+    
+    <li ><a href="#method-i-get_group_user_names_by_group_name">#get_group_user_names_by_group_name</a>
+    
+    <li ><a href="#method-i-get_group_users">#get_group_users</a>
+    
+    <li ><a href="#method-i-get_groups">#get_groups</a>
+    
+    <li ><a href="#method-i-get_user_id_by_login">#get_user_id_by_login</a>
+    
+    <li ><a href="#method-i-get_user_id_by_mail">#get_user_id_by_mail</a>
+    
+    <li ><a href="#method-i-get_users">#get_users</a>
+    
+    <li ><a href="#method-i-group_add_user_by_login">#group_add_user_by_login</a>
+    
+    <li ><a href="#method-i-group_remove_user_by_login">#group_remove_user_by_login</a>
+    
+    <li ><a href="#method-i-post_data">#post_data</a>
+    
+    <li ><a href="#method-i-put_data">#put_data</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-RedmineOperations">
+  <h1 id="class-RedmineOperations" class="class">
+    class RedmineOperations
+  </h1>
+
+  <section class="description">
+    
+<p>Class to handle operation with a Redmine server through its REST api</p>
+
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <section class="attribute-method-details" class="method-section">
+      <header>
+        <h3>Attributes</h3>
+      </header>
+
+      
+      <div id="attribute-i-base_url" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">base_url</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Url of the Redmine server</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-content_type" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">content_type</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Message content-type, to be set in message header</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-format" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">format</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Format of data to be sent over the HTTP connection. Now only JSON, could
+also be XML</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-password" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">password</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Password to access the server</p>
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-user" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">user</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Username to access the server</p>
+        
+        </div>
+      </div>
+      
+    </section>
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Initializes the class</p>
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 22</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>
+  <span class="ruby-identifier">login</span> =  <span class="ruby-constant">Login</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-ivar">@format</span> = <span class="ruby-string">&#39;.json&#39;</span>
+  <span class="ruby-ivar">@content_type</span> = <span class="ruby-string">&quot;application/json&quot;</span>
+  <span class="ruby-ivar">@base_url</span> = <span class="ruby-identifier">login</span>.<span class="ruby-identifier">base_url</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-ivar">@user</span> = <span class="ruby-identifier">login</span>.<span class="ruby-identifier">user</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-ivar">@password</span> = <span class="ruby-identifier">login</span>.<span class="ruby-identifier">password</span>.<span class="ruby-identifier">to_s</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-create_group" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_group</span><span
+            class="method-args">(groupname)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Creates a new group Params:</p>
+<dl class="rdoc-list note-list"><dt><code>groupname</code>
+<dd>
+<p>Name of group to be created</p>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="create_group-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 34</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create_group</span>(<span class="ruby-identifier">groupname</span>)
+  <span class="ruby-identifier">payload</span> = { <span class="ruby-identifier">group</span><span class="ruby-operator">:</span> {<span class="ruby-identifier">name</span><span class="ruby-operator">:</span> <span class="ruby-identifier">groupname</span>}}
+  <span class="ruby-identifier">endpoint</span> = <span class="ruby-string">&#39;/groups&#39;</span>
+  <span class="ruby-identifier">url</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">base_url</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">endpoint</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">format</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">post_data</span>(<span class="ruby-identifier">url</span>, <span class="ruby-identifier">payload</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-create_user" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_user</span><span
+            class="method-args">(userparams = {})</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Creates a new user Params:</p>
+<dl class="rdoc-list note-list"><dt><code>login</code>
+<dd>
+<p><a href="Login.html">Login</a> name for new user</p>
+</dd><dt><code>firstname</code>
+<dd>
+<p>User&#39;s first name</p>
+</dd><dt><code>lastname</code>
+<dd>
+<p>User&#39;s last name</p>
+</dd><dt><code>mail</code>
+<dd>
+<p>User&#39;s email address</p>
+</dd><dt><code>password</code>
+<dd>
+<p>Password for login</p>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="create_user-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 48</span>
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">create_user</span>(<span class="ruby-identifier">userparams</span> = {})
+    <span class="ruby-comment"># TODO input verification</span>
+<span class="ruby-comment">#    puts userparams.to_s</span>
+
+<span class="ruby-comment">#    begin userparams.fetch(:login) rescue KeyError</span>
+<span class="ruby-comment">#      raise ArgumentError.new(&#39;User login name is required&#39;)</span>
+<span class="ruby-comment">#    end</span>
+<span class="ruby-comment">#    begin puts userparams.fetch(:firstname) rescue KeyError</span>
+<span class="ruby-comment">#      raise ArgumentError.new(&#39;User first name is required&#39;) # if userparams.login.empty?</span>
+<span class="ruby-comment">#    end</span>
+<span class="ruby-comment">#    begin puts userparams.fetch(:lastname) rescue KeyError</span>
+<span class="ruby-comment">#      raise ArgumentError.new(&#39;User last name is required&#39;)  # if userparams.lastname.to_s.empty?</span>
+<span class="ruby-comment">#    end</span>
+<span class="ruby-comment">#    begin puts userparams.fetch(:email) rescue KeyError</span>
+<span class="ruby-comment">#      raise ArgumentError.new(&#39;User email is required&#39;) # if userparams.mail.to_s.empty?</span>
+<span class="ruby-comment">#    end</span>
+
+
+<span class="ruby-comment">#    if userparams.fetch(:login).empty? || userparams.fetch(:login).nil?</span>
+<span class="ruby-comment">#      raise ArgumentError.new(&#39;User login name is required&#39;)</span>
+<span class="ruby-comment">#    end</span>
+
+<span class="ruby-comment">#    raise ArgumentError.new(&#39;User first name is required&#39;) if userparams.firstname.to_s.empty?</span>
+
+    <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">format</span> <span class="ruby-operator">==</span> <span class="ruby-string">&#39;.json&#39;</span>
+      <span class="ruby-identifier">payload</span> = { <span class="ruby-identifier">user</span><span class="ruby-operator">:</span> <span class="ruby-identifier">userparams</span>}
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">endpoint</span> = <span class="ruby-string">&#39;/users&#39;</span>
+    <span class="ruby-identifier">url</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">base_url</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">endpoint</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">format</span>.<span class="ruby-identifier">to_s</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">post_data</span>(<span class="ruby-identifier">url</span>, <span class="ruby-identifier">payload</span>)
+  <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-delete_data" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_data</span><span
+            class="method-args">(url)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Delete data given an url Params:</p>
+<dl class="rdoc-list note-list"><dt><code>url</code>
+<dd>
+<p>url to fetch data from</p>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="delete_data-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 268</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_data</span>(<span class="ruby-identifier">url</span>)
+  <span class="ruby-identifier">uri</span> = <span class="ruby-constant">URI</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">url</span>)
+  <span class="ruby-identifier">req</span> = <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">HTTP</span><span class="ruby-operator">::</span><span class="ruby-constant">Delete</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">uri</span>.<span class="ruby-identifier">request_uri</span>)
+  <span class="ruby-identifier">req</span>[<span class="ruby-string">&quot;Content-Type&quot;</span>] = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">content_type</span>
+  <span class="ruby-identifier">req</span>.<span class="ruby-identifier">basic_auth</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">user</span>.<span class="ruby-identifier">to_s</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">password</span>.<span class="ruby-identifier">to_s</span>)
+  <span class="ruby-identifier">http</span> = <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">HTTP</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">uri</span>.<span class="ruby-identifier">host</span>, <span class="ruby-identifier">uri</span>.<span class="ruby-identifier">port</span>)
+  <span class="ruby-identifier">http</span>.<span class="ruby-identifier">request</span>(<span class="ruby-identifier">req</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-delete_group_by_name" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_group_by_name</span><span
+            class="method-args">(groupname)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Delete a group using the group&#39;s name Params:</p>
+<dl class="rdoc-list note-list"><dt><code>groupname</code>
+<dd>
+<p>Name of the group</p>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="delete_group_by_name-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 192</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_group_by_name</span>(<span class="ruby-identifier">groupname</span>)
+  <span class="ruby-identifier">endpoint</span> = <span class="ruby-string">&#39;/groups&#39;</span>
+  <span class="ruby-identifier">id</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_group_id_by_group_name</span>(<span class="ruby-identifier">groupname</span>)
+  <span class="ruby-identifier">url</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">base_url</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">endpoint</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">id</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">format</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">delete_data</span>(<span class="ruby-identifier">url</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-delete_user_by_id" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_user_by_id</span><span
+            class="method-args">(id)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Delete a user using the id Params:</p>
+<dl class="rdoc-list note-list"><dt><code>id</code>
+<dd>
+<p>User&#39;s id</p>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="delete_user_by_id-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 218</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_user_by_id</span>(<span class="ruby-identifier">id</span>)
+  <span class="ruby-identifier">endpoint</span> = <span class="ruby-string">&#39;/users&#39;</span>
+  <span class="ruby-identifier">url</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">base_url</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">endpoint</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">id</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">format</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">delete_data</span>(<span class="ruby-identifier">url</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-delete_user_by_login" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_user_by_login</span><span
+            class="method-args">(login)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Delete a user using the login name Params:</p>
+<dl class="rdoc-list note-list"><dt><code>login</code>
+<dd>
+<p>Users login name</p>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="delete_user_by_login-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 210</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_user_by_login</span>(<span class="ruby-identifier">login</span>)
+  <span class="ruby-identifier">id</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_user_id_by_login</span>(<span class="ruby-identifier">login</span>)
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">delete_user_by</span>(<span class="ruby-identifier">id</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-delete_user_by_mail" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_user_by_mail</span><span
+            class="method-args">(mail)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Delete a user using the email address Params:</p>
+<dl class="rdoc-list note-list"><dt><code>mail</code>
+<dd>
+<p>User&#39;s mail address</p>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="delete_user_by_mail-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 202</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_user_by_mail</span>(<span class="ruby-identifier">mail</span>)
+  <span class="ruby-identifier">id</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_user_id_by_mail</span>(<span class="ruby-identifier">mail</span>)
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">delete_user_by_id</span>(<span class="ruby-identifier">id</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-get_data" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_data</span><span
+            class="method-args">(url)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get data given an url Params:</p>
+<dl class="rdoc-list note-list"><dt><code>url</code>
+<dd>
+<p>url to fetch data from</p>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="get_data-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 228</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_data</span>(<span class="ruby-identifier">url</span>)
+  <span class="ruby-identifier">uri</span> = <span class="ruby-constant">URI</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">url</span>)
+  <span class="ruby-identifier">req</span> = <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">HTTP</span><span class="ruby-operator">::</span><span class="ruby-constant">Get</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">uri</span>.<span class="ruby-identifier">request_uri</span>)
+  <span class="ruby-identifier">req</span>[<span class="ruby-string">&quot;Content-Type&quot;</span>] = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">content_type</span>
+  <span class="ruby-identifier">req</span>.<span class="ruby-identifier">basic_auth</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">user</span>.<span class="ruby-identifier">to_s</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">password</span>.<span class="ruby-identifier">to_s</span>)
+  <span class="ruby-identifier">http</span> = <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">HTTP</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">uri</span>.<span class="ruby-identifier">host</span>, <span class="ruby-identifier">uri</span>.<span class="ruby-identifier">port</span>)
+  <span class="ruby-constant">JSON</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">http</span>.<span class="ruby-identifier">request</span>(<span class="ruby-identifier">req</span>).<span class="ruby-identifier">body</span>.<span class="ruby-identifier">to_s</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-get_group_by_id" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_group_by_id</span><span
+            class="method-args">(id)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get group using the group id Params:</p>
+<dl class="rdoc-list note-list"><dt><code>id</code>
+<dd>
+<p>Id of the group</p>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="get_group_by_id-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 156</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_group_by_id</span>(<span class="ruby-identifier">id</span>)
+  <span class="ruby-identifier">endpoint</span> = <span class="ruby-string">&#39;/groups&#39;</span>
+  <span class="ruby-identifier">url</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">base_url</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">endpoint</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">id</span>.<span class="ruby-identifier">to_s</span>  <span class="ruby-operator">+</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">format</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-identifier">response</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_data</span>(<span class="ruby-identifier">url</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-get_group_id_by_group_name" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_group_id_by_group_name</span><span
+            class="method-args">(groupname)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get the id of the group by its name Params:</p>
+<dl class="rdoc-list note-list"><dt><code>groupname</code>
+<dd>
+<p>Name of the group</p>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="get_group_id_by_group_name-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 118</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_group_id_by_group_name</span>(<span class="ruby-identifier">groupname</span>)
+  <span class="ruby-identifier">endpoint</span> = <span class="ruby-string">&#39;/groups&#39;</span>
+  <span class="ruby-identifier">url</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">base_url</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">endpoint</span>.<span class="ruby-identifier">to_s</span>  <span class="ruby-operator">+</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">format</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-identifier">response</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_data</span>(<span class="ruby-identifier">url</span>)
+  <span class="ruby-identifier">response</span>[<span class="ruby-string">&quot;groups&quot;</span>].<span class="ruby-identifier">select</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">value</span><span class="ruby-operator">|</span> <span class="ruby-identifier">value</span>[<span class="ruby-string">&quot;name&quot;</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">groupname</span> }.<span class="ruby-identifier">first</span>[<span class="ruby-string">&quot;id&quot;</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-get_group_user_ids_by_group_id" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_group_user_ids_by_group_id</span><span
+            class="method-args">(id)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get the users of the group by the group id Params:</p>
+<dl class="rdoc-list note-list"><dt><code>id</code>
+<dd>
+<p>Id of the group</p>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="get_group_user_ids_by_group_id-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 128</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_group_user_ids_by_group_id</span>(<span class="ruby-identifier">id</span>)
+  <span class="ruby-identifier">result</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_group_users</span>(<span class="ruby-identifier">id</span>)
+  <span class="ruby-identifier">result</span>[<span class="ruby-string">&quot;group&quot;</span>].<span class="ruby-identifier">select</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">values</span><span class="ruby-operator">|</span> <span class="ruby-identifier">values</span>[<span class="ruby-string">&quot;users&quot;</span>]}[<span class="ruby-string">&quot;users&quot;</span>].<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">v</span>[<span class="ruby-string">&quot;id&quot;</span>]}
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-get_group_user_names_by_group_name" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_group_user_names_by_group_name</span><span
+            class="method-args">(name)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get group users names using the group name Params:</p>
+<dl class="rdoc-list note-list"><dt><code>name</code>
+<dd>
+<p>Name of the group</p>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="get_group_user_names_by_group_name-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 136</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_group_user_names_by_group_name</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-identifier">id</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_group_id_by_group_name</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-identifier">result</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_group_users</span>(<span class="ruby-identifier">id</span>)
+  <span class="ruby-identifier">result</span>[<span class="ruby-string">&quot;group&quot;</span>].<span class="ruby-identifier">select</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">values</span><span class="ruby-operator">|</span> <span class="ruby-identifier">values</span>[<span class="ruby-string">&quot;users&quot;</span>]}[<span class="ruby-string">&quot;users&quot;</span>].<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">v</span>[<span class="ruby-string">&quot;name&quot;</span>]}
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-get_group_users" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_group_users</span><span
+            class="method-args">(id)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get group users using the group id Params:</p>
+<dl class="rdoc-list note-list"><dt><code>id</code>
+<dd>
+<p>Id of the group</p>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="get_group_users-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 146</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_group_users</span>(<span class="ruby-identifier">id</span>)
+  <span class="ruby-identifier">endpoint</span> = <span class="ruby-string">&#39;/groups&#39;</span>
+  <span class="ruby-identifier">user_query</span> = <span class="ruby-string">&#39;?include=users&#39;</span>
+  <span class="ruby-identifier">url</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">base_url</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">endpoint</span>.<span class="ruby-identifier">to_s</span>  <span class="ruby-operator">+</span> <span class="ruby-string">&quot;/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">id</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">format</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">user_query</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_data</span>(<span class="ruby-identifier">url</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-get_groups" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_groups</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get a listing of groups</p>
+          
+          
+
+          
+          <div class="method-source-code" id="get_groups-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 109</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_groups</span>
+  <span class="ruby-identifier">endpoint</span> = <span class="ruby-string">&#39;/groups&#39;</span>
+  <span class="ruby-identifier">url</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">base_url</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">endpoint</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">format</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_data</span>(<span class="ruby-identifier">url</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-get_user_id_by_login" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_user_id_by_login</span><span
+            class="method-args">(login)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get the user id with the login</p>
+          
+          
+
+          
+          <div class="method-source-code" id="get_user_id_by_login-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 95</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_user_id_by_login</span>(<span class="ruby-identifier">login</span>)
+  <span class="ruby-identifier">users</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_users</span>
+  <span class="ruby-identifier">users</span>[<span class="ruby-string">&quot;users&quot;</span>].<span class="ruby-identifier">select</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">value</span><span class="ruby-operator">|</span> <span class="ruby-identifier">value</span>[<span class="ruby-string">&quot;login&quot;</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">login</span> }.<span class="ruby-identifier">first</span>[<span class="ruby-string">&quot;id&quot;</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-get_user_id_by_mail" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_user_id_by_mail</span><span
+            class="method-args">(mail)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get the user id with the mail Params:</p>
+<dl class="rdoc-list note-list"><dt><code>mail</code>
+<dd>
+<p>Email address of user</p>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="get_user_id_by_mail-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 103</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_user_id_by_mail</span>(<span class="ruby-identifier">mail</span>)
+  <span class="ruby-identifier">users</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_users</span>
+  <span class="ruby-identifier">users</span>[<span class="ruby-string">&quot;users&quot;</span>].<span class="ruby-identifier">select</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">value</span><span class="ruby-operator">|</span> <span class="ruby-identifier">value</span>[<span class="ruby-string">&quot;mail&quot;</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">mail</span> }.<span class="ruby-identifier">first</span>[<span class="ruby-string">&quot;id&quot;</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-get_users" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_users</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get a listing of current users</p>
+          
+          
+
+          
+          <div class="method-source-code" id="get_users-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 81</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_users</span>
+  <span class="ruby-identifier">endpoint</span> = <span class="ruby-string">&#39;/users/current&#39;</span>
+  <span class="ruby-identifier">url</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">base_url</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">endpoint</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">format</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_data</span>(<span class="ruby-identifier">url</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-group_add_user_by_login" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">group_add_user_by_login</span><span
+            class="method-args">(groupname, login)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Add user to a group using the user&#39;s login name Params:</p>
+<dl class="rdoc-list note-list"><dt><code>groupname</code>
+<dd>
+<p>Name of the group</p>
+</dd><dt><code>login</code>
+<dd>
+<p>User&#39;s login name</p>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="group_add_user_by_login-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 166</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">group_add_user_by_login</span>(<span class="ruby-identifier">groupname</span>, <span class="ruby-identifier">login</span>)
+  <span class="ruby-identifier">endpoint</span> = <span class="ruby-string">&#39;/groups&#39;</span>
+  <span class="ruby-identifier">group_id</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_group_id_by_group_name</span>(<span class="ruby-identifier">groupname</span>)
+  <span class="ruby-identifier">url</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">base_url</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">endpoint</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">group_id</span>.<span class="ruby-identifier">to_s</span>  <span class="ruby-operator">+</span> <span class="ruby-string">&quot;/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;users&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">format</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-identifier">new_user</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_user_id_by_login</span>(<span class="ruby-identifier">login</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">format</span> <span class="ruby-operator">==</span> <span class="ruby-string">&#39;.json&#39;</span>
+    <span class="ruby-identifier">payload</span> = { <span class="ruby-identifier">user_id</span><span class="ruby-operator">:</span> <span class="ruby-identifier">new_user</span> }
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">post_data</span>(<span class="ruby-identifier">url</span>, <span class="ruby-identifier">payload</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-group_remove_user_by_login" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">group_remove_user_by_login</span><span
+            class="method-args">(groupname, login)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Remove user from a group using the user&#39;s login name Params:</p>
+<dl class="rdoc-list note-list"><dt><code>groupname</code>
+<dd>
+<p>Name of the group</p>
+</dd><dt><code>login</code>
+<dd>
+<p>User&#39;s login name</p>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="group_remove_user_by_login-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 181</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">group_remove_user_by_login</span>(<span class="ruby-identifier">groupname</span>, <span class="ruby-identifier">login</span>)
+  <span class="ruby-identifier">endpoint</span> = <span class="ruby-string">&#39;/groups&#39;</span>
+  <span class="ruby-identifier">group_id</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_group_id_by_group_name</span>(<span class="ruby-identifier">groupname</span>)
+  <span class="ruby-identifier">user</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_user_id_by_login</span>(<span class="ruby-identifier">login</span>)
+  <span class="ruby-identifier">url</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">base_url</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">endpoint</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">group_id</span>.<span class="ruby-identifier">to_s</span>  <span class="ruby-operator">+</span> <span class="ruby-string">&quot;/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;users&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">user</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">format</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">delete_data</span>(<span class="ruby-identifier">url</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-post_data" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">post_data</span><span
+            class="method-args">(url, payload)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Post data given an url. Used to create items Params:</p>
+<dl class="rdoc-list note-list"><dt><code>url</code>
+<dd>
+<p>url to fetch data from</p>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="post_data-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 240</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">post_data</span>(<span class="ruby-identifier">url</span>, <span class="ruby-identifier">payload</span>)
+  <span class="ruby-identifier">uri</span> = <span class="ruby-constant">URI</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">url</span>)
+  <span class="ruby-identifier">req</span> = <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">HTTP</span><span class="ruby-operator">::</span><span class="ruby-constant">Post</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">uri</span>.<span class="ruby-identifier">request_uri</span>)
+  <span class="ruby-identifier">req</span>[<span class="ruby-string">&quot;Content-Type&quot;</span>] = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">content_type</span>
+  <span class="ruby-identifier">req</span>.<span class="ruby-identifier">basic_auth</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">user</span>.<span class="ruby-identifier">to_s</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">password</span>.<span class="ruby-identifier">to_s</span>)
+  <span class="ruby-identifier">req</span>.<span class="ruby-identifier">body</span> = <span class="ruby-identifier">payload</span>.<span class="ruby-identifier">to_json</span>
+  <span class="ruby-identifier">http</span> = <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">HTTP</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">uri</span>.<span class="ruby-identifier">host</span>, <span class="ruby-identifier">uri</span>.<span class="ruby-identifier">port</span>)
+  <span class="ruby-identifier">response</span> = <span class="ruby-identifier">http</span>.<span class="ruby-identifier">request</span>(<span class="ruby-identifier">req</span>)
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">response</span>.<span class="ruby-identifier">code</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">response</span>.<span class="ruby-identifier">body</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-put_data" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">put_data</span><span
+            class="method-args">(url, payload)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Put data given an url. Used for updates Params:</p>
+<dl class="rdoc-list note-list"><dt><code>url</code>
+<dd>
+<p>url to fetch data from</p>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="put_data-source">
+            <pre><span class="ruby-comment"># File RedmineOperations.rb, line 255</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">put_data</span>(<span class="ruby-identifier">url</span>, <span class="ruby-identifier">payload</span>)
+  <span class="ruby-identifier">uri</span> = <span class="ruby-constant">URI</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">url</span>)
+  <span class="ruby-identifier">req</span> = <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">HTTP</span><span class="ruby-operator">::</span><span class="ruby-constant">Put</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">uri</span>.<span class="ruby-identifier">request_uri</span>)
+  <span class="ruby-identifier">req</span>[<span class="ruby-string">&quot;Content-Type&quot;</span>] = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">content_type</span>
+  <span class="ruby-identifier">req</span>.<span class="ruby-identifier">basic_auth</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">user</span>.<span class="ruby-identifier">to_s</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">password</span>.<span class="ruby-identifier">to_s</span>)
+  <span class="ruby-identifier">req</span>.<span class="ruby-identifier">body</span> = <span class="ruby-identifier">payload</span>.<span class="ruby-identifier">to_json</span>
+  <span class="ruby-identifier">http</span> = <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">HTTP</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">uri</span>.<span class="ruby-identifier">host</span>, <span class="ruby-identifier">uri</span>.<span class="ruby-identifier">port</span>)
+  <span class="ruby-identifier">response</span> = <span class="ruby-identifier">http</span>.<span class="ruby-identifier">request</span>(<span class="ruby-identifier">req</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.3.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

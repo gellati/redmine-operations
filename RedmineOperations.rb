@@ -47,27 +47,6 @@ class RedmineOperations
   # +password+:: Password for login
   def create_user(userparams = {})
     # TODO input verification
-#    puts userparams.to_s
-
-#    begin userparams.fetch(:login) rescue KeyError
-#      raise ArgumentError.new('User login name is required')
-#    end
-#    begin puts userparams.fetch(:firstname) rescue KeyError
-#      raise ArgumentError.new('User first name is required') # if userparams.login.empty?
-#    end
-#    begin puts userparams.fetch(:lastname) rescue KeyError
-#      raise ArgumentError.new('User last name is required')  # if userparams.lastname.to_s.empty?
-#    end
-#    begin puts userparams.fetch(:email) rescue KeyError
-#      raise ArgumentError.new('User email is required') # if userparams.mail.to_s.empty?
-#    end
-
-
-#    if userparams.fetch(:login).empty? || userparams.fetch(:login).nil?
-#      raise ArgumentError.new('User login name is required')
-#    end
-
-#    raise ArgumentError.new('User first name is required') if userparams.firstname.to_s.empty?
 
     if self.format == '.json'
       payload = { user: userparams}
@@ -80,13 +59,6 @@ class RedmineOperations
   # Get a listing of current users
   def get_users
     endpoint = '/users/current'
-    url = self.base_url.to_s + endpoint.to_s + self.format.to_s
-    self.get_data(url)
-  end
-
-  # Get a listing of current users. duplicate method?
-  def get_users
-    endpoint = '/users'
     url = self.base_url.to_s + endpoint.to_s + self.format.to_s
     self.get_data(url)
   end
